@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 export default function Hero(){
 
     return(
-        <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 pt-10 pb-16 sm:px-6 md:grid-cols-2 md:pt-20 md:pb-24 lg:px-8">
+        <section id="home" className="mx-auto grid max-w-7xl items-center gap-10 px-4 pt-10 pb-16 sm:px-6 md:grid-cols-2 md:pt-20 md:pb-24 lg:px-8">
             <div className="text-center md:text-left">
                 <h1 className="text-4xl leading-right font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
                     Build Your Ideal
