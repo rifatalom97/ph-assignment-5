@@ -1,4 +1,4 @@
-import { X, Trash2 } from "lucide-react";
+import { X } from "lucide-react";
 import type { Tech } from "./TechCard";
 
 export type Stack = Record<string, Tech>;
@@ -6,28 +6,18 @@ export type Stack = Record<string, Tech>;
 interface StackPanelProps {
   stack: Stack;
   onRemove: (tech: Tech) => void;
-  onClear: () => void;
-  onSave: () => void;
+  onRemoveAll: () => void;
 }
 
-export default function StackPanel({ stack, onRemove, onClear, onSave }: StackPanelProps) {
+export default function StackPanel({ stack, onRemove, onRemoveAll }: StackPanelProps) {
   const items = Object.values(stack);
 
   return (
     <aside className="rounded-xl border border-slate-100 bg-white p-5 shadow-sm lg:sticky lg:top-24">
       <div className="flex items-center justify-between">
         <h3 className="font-bold">Your Stack</h3>
-        {items.length > 0 && (
-          <button
-            type="button"
-            onClick={onClear}
-            className="flex items-center gap-1 text-xs font-medium text-slate-400 hover:text-red-500"
-          >
-            <Trash2 className="h-3.5 w-3.5" /> Clear
-          </button>
-        )}
       </div>
-      
+
       <p className="mt-1 text-xs text-slate-400">
         {items.length === 0
           ? "No technologies selected yet."
@@ -64,10 +54,10 @@ export default function StackPanel({ stack, onRemove, onClear, onSave }: StackPa
 
           <button
             type="button"
-            onClick={onSave}
+            onClick={onRemoveAll}
             className="mt-4 w-full rounded-lg bg-gradient-to-r from-orange-500 to-pink-500 py-2.5 text-sm font-semibold text-white hover:opacity-90"
           >
-            Save Stack
+            Remove All
           </button>
         </>
       )}

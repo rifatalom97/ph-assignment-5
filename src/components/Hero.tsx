@@ -1,5 +1,7 @@
 import HeroIllustration from "./HeroIllustration";
 
+import toast from "react-hot-toast";
+
 export default function Hero(){
 
     return(

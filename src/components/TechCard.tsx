@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { Star, Check } from "lucide-react";
 
 export interface Tech {
-  id?: string | number;
+  id: string | number;
   name: string;
   description: string;
   icon: ReactNode;      // string (e.g. "R") or a component/element
