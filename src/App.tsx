@@ -1,6 +1,7 @@
 import {Toaster} from "react-hot-toast"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Footer from "./components/Footer"
 
 
 
@@ -17,7 +18,11 @@ function App() {
 
       <Navbar />
 
-      <Hero />
+      <main>
+        <Hero />
+      </main>
+
+      <Footer />
     </div>
   )
 }
