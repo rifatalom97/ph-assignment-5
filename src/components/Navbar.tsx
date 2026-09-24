@@ -39,9 +39,9 @@ export default function Navbar(){
 
                 <div className="hidden items-center gap-4 md:flex">
                     <button onClick={() => toast("This will go sign in", { icon: "🔐" })}
-                        className="text-sm font-medium text-slate-700 hover:text-slate-900">Sign In</button>
+                        className="text-sm font-medium text-slate-700 hover:text-slate-900 cursor-pointer">Sign In</button>
                     <button onClick={() => toast.success("This will go sign up")}
-                        className="rounded-full bg-fuchsia-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-700">
+                        className="rounded-full bg-fuchsia-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-700  cursor-pointer">
                         Sign Up
                     </button>
                 </div>
@@ -61,9 +61,9 @@ export default function Navbar(){
                     ))}
                     <div className="mt-2 flex gap-3">
                         <button onClick={() => toast("This will go sign in", { icon: "🔐" })}
-                        className="text-sm font-medium text-slate-700 hover:text-slate-900">Sign In</button>
+                        className="text-sm font-medium text-slate-700 hover:text-slate-900 cursor-pointer">Sign In</button>
                         <button onClick={() => toast.success("This will go sign up")}
-                            className="rounded-full bg-fuchsia-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-700">
+                            className="rounded-full bg-fuchsia-600 px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-700 cursor-pointer">
                             Sign Up
                         </button>
                     </div>

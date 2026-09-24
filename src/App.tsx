@@ -1,5 +1,6 @@
 import {Toaster} from "react-hot-toast"
 import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
 
 
@@ -15,6 +16,8 @@ function App() {
       />
 
       <Navbar />
+
+      <Hero />
     </div>
   )
 }
