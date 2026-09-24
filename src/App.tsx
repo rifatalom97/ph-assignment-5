@@ -1,5 +1,5 @@
-import { useState } from "react"
-import toast, {Toaster} from "react-hot-toast"
+import {Toaster} from "react-hot-toast"
+import Navbar from "./components/Navbar"
 
 
 
@@ -13,6 +13,8 @@ function App() {
           success: { iconTheme: { primary: "#c026d3", secondary: "#fff" } },
         }}
       />
+
+      <Navbar />
     </div>
   )
 }
